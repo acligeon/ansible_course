@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  tasks:
+
+    - name: Shut down the machine with all defaults
+      community.general.shutdown:
+        msg: "Shutdown in 10 seconds"
+        delay: 10
