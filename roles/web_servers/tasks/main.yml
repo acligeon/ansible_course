@@ -15,7 +15,7 @@
   ansible.builtin.lineinfile:
     path: /etc/httpd/conf/httpd.conf
     regexp: '^ServerAdmin'
-    line: ServerAdmin somebodysomewhere.net
+    line: ServerAdmin somebodysomewhere.com
   when: ansible_distribution == "RedHat"
   notify: restart_apache
 
