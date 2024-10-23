@@ -1,2 +1,2 @@
 apache_package: httpd
-apache_service: https
+apache_service: httpd
